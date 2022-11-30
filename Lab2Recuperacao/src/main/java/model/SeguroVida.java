@@ -1,19 +1,20 @@
 package model;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.experimental.SuperBuilder;
 
 @Getter
 @Setter
-@AllArgsConstructor
+@NoArgsConstructor
 public class SeguroVida extends Seguro {
 
 	private String beneficiario;
 	private Data datanasc;
 
 	@Override
-	public String toString() {
+	public String imprimirSeguro() {
 
 		StringBuilder stringBuilder = new StringBuilder();
 		stringBuilder.append("SeguroVida [beneficiario=");
@@ -23,6 +24,12 @@ public class SeguroVida extends Seguro {
 		stringBuilder.append(", toString()=");
 		stringBuilder.append(super.imprimirSeguro());
 		return stringBuilder.toString();
+	}
+
+	public SeguroVida(int i, String beneficiario, double d, double e, Endereco endereco, String string, Data datanasc) {
+		super();
+		setBeneficiario(beneficiario);
+		setDatanasc(datanasc);
 	} 
 
 }

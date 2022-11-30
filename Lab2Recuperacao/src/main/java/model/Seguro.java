@@ -1,12 +1,12 @@
 package model;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
-@AllArgsConstructor
+@NoArgsConstructor
 public abstract class Seguro {
 
 	private int numApolice;
@@ -30,5 +30,15 @@ public abstract class Seguro {
 		stringBuilder.append("]");
 		return stringBuilder.toString();
 	}
+
+	public Seguro(int numApolice, String nome, float valor, float premio, Endereco endereco) {
+		super();
+		this.numApolice = numApolice;
+		this.nome = nome;
+		this.valor = valor;
+		this.premio = premio;
+		this.endereco = endereco;
+	}
+
 
 }

@@ -1,15 +1,17 @@
 package model;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
+@NoArgsConstructor
 public class SeguroCasa extends Seguro{
 	private int deducaoCasa;
 	private int anoConstrucao;
 	@Override
-	public String toString() {
+	public String imprimirSeguro() {
 		StringBuilder stringBuilder = new StringBuilder();
 		stringBuilder.append("SeguroCasa [deducaoCasa=");
 		stringBuilder.append(deducaoCasa);
