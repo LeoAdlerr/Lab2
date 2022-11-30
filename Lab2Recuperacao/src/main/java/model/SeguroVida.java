@@ -26,7 +26,7 @@ public class SeguroVida extends Seguro {
 		return stringBuilder.toString();
 	}
 
-	public SeguroVida(int i, String beneficiario, double d, double e, Endereco endereco, String string, Data datanasc) {
+	public SeguroVida(int apolice, String nome, double valor, double premio, Endereco endereco, String benefeciario, Data data) {
 		super();
 		setBeneficiario(beneficiario);
 		setDatanasc(datanasc);
