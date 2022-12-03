@@ -19,15 +19,15 @@ public class SeguroAuto extends Seguro{
 	public String imprimirSeguro() {
 		StringBuilder stringBuilder = new StringBuilder();
 		stringBuilder.append("SeguroAuto [deducaoAutomovel=");
-		stringBuilder.append(deducaoAutomovel);
+		stringBuilder.append(getDeducaoAutomovel());
 		stringBuilder.append(", numLicenca=");
-		stringBuilder.append(numLicenca);
+		stringBuilder.append(getNumLicenca());
 		stringBuilder.append(", estado=");
-		stringBuilder.append(estado);
+		stringBuilder.append(getEstado());
 		stringBuilder.append(", modelo=");
-		stringBuilder.append(modelo);
+		stringBuilder.append(getModelo());
 		stringBuilder.append(", ano=");
-		stringBuilder.append(ano);
+		stringBuilder.append(getAno());
 		stringBuilder.append(", toString()=");
 		stringBuilder.append(super.imprimirSeguro());
 		stringBuilder.append("]");

@@ -14,9 +14,9 @@ public class SeguroCasa extends Seguro{
 	public String imprimirSeguro() {
 		StringBuilder stringBuilder = new StringBuilder();
 		stringBuilder.append("SeguroCasa [deducaoCasa=");
-		stringBuilder.append(deducaoCasa);
+		stringBuilder.append(getDeducaoCasa());
 		stringBuilder.append(", anoConstrucao=");
-		stringBuilder.append(anoConstrucao);
+		stringBuilder.append(getAnoConstrucao());
 		stringBuilder.append(", toString()=");
 		stringBuilder.append(super.imprimirSeguro());
 		stringBuilder.append("]");

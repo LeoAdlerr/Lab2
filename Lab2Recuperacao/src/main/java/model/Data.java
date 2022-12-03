@@ -16,11 +16,11 @@ public class Data {
 	public String imprimirData() {
 		StringBuilder stringBuilder = new StringBuilder();
 		stringBuilder.append("Data [dia=");
-		stringBuilder.append(dia);
+		stringBuilder.append(getDia());
 		stringBuilder.append(", mes=");
-		stringBuilder.append(mes);
+		stringBuilder.append(getMes());
 		stringBuilder.append(", ano=");
-		stringBuilder.append(ano);
+		stringBuilder.append(getAno());
 		stringBuilder.append("]");
 		return stringBuilder.toString();
 	}

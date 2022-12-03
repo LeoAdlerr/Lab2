@@ -17,13 +17,13 @@ public class Endereco {
 	public String imprimirEndereco() {
 		StringBuilder stringBuilder = new StringBuilder();
 		stringBuilder.append("Endereco [enderecoCompleto=");
-		stringBuilder.append(enderecoCompleto);
+		stringBuilder.append(getEnderecoCompleto());
 		stringBuilder.append(", cidade=");
-		stringBuilder.append(cidade);
+		stringBuilder.append(getCidade());
 		stringBuilder.append(", estado=");
-		stringBuilder.append(estado);
+		stringBuilder.append(getEstado());
 		stringBuilder.append(", cep=");
-		stringBuilder.append(cep);
+		stringBuilder.append(getCep());
 		stringBuilder.append("]");
 		return stringBuilder.toString();
 	}

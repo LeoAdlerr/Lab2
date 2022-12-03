@@ -18,9 +18,9 @@ public class SeguroVida extends Seguro {
 
 		StringBuilder stringBuilder = new StringBuilder();
 		stringBuilder.append("SeguroVida [beneficiario=");
-		stringBuilder.append(beneficiario);
+		stringBuilder.append(getBeneficiario());
 		stringBuilder.append(", datanasc=");
-		stringBuilder.append(datanasc.imprimirData());
+		stringBuilder.append(getDatanasc().imprimirData());
 		stringBuilder.append(", toString()=");
 		stringBuilder.append(super.imprimirSeguro());
 		return stringBuilder.toString();

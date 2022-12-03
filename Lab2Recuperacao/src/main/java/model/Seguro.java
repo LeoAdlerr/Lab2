@@ -18,13 +18,13 @@ public abstract class Seguro {
 	public String imprimirSeguro() {
 		StringBuilder stringBuilder = new StringBuilder();
 		stringBuilder.append("Seguro [numApolice=");
-		stringBuilder.append(numApolice);
+		stringBuilder.append(getNumApolice());
 		stringBuilder.append(", nome=");
-		stringBuilder.append(nome);
+		stringBuilder.append(getNome());
 		stringBuilder.append(", valor=");
-		stringBuilder.append(valor);
+		stringBuilder.append(getValor());
 		stringBuilder.append(", premio=");
-		stringBuilder.append(premio);
+		stringBuilder.append(getPremio());
 		stringBuilder.append(", endereco=");
 		stringBuilder.append(getEndereco().imprimirEndereco());
 		stringBuilder.append("]");
